@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Document</title>
+</head>
+<style> 
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
+body {
+        width: 100vw;
+        height: 100vh;
+         background-image: linear-gradient(#a1ffce,#faffd1);
+        text-align: center;
+        font-family: 'Road Rage', cursive !important;
+        color: blue;
+        text-shadow: 0px 0px 10px rgb(119, 204, 253);
+        font-weight: bold;
+    }
+    label{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    
+    h1:hover {
+        transform: scale(0.9);
+    }
+    
+    h2:hover {
+        transform: scale(0.9);
+    }
+    
+    h3:hover {
+        transform: scale(0.9);
+    }
+    
+    p:hover {
+        transform: scale(0.9);
+    }
+    
+    li:hover {
+        transform: scale(0.9);
+    }
+    
+    img:hover {
+        transform: scale(1.2);
+    }
+    img{
+        width: 40%;
+        
+    }
+    </style>
+<body>
+    <nav class="navbar navbar-expand-xxxl navbar-dark bg-dark">
+        <a class="navbar-brand" href="">Science day</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="science day.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="scientific invention.html">scientific invention</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Scientific evolution in transportation.html">Scientific evolution in transpor</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+    <h1 id="score">Score:0</h1>
+    
+    <h3>1.who invented first plane</h3>
+    <label for="">albert einstien </label>
+    <input type="radio" name="ipl" id="" value="6">
+    <label for="">Wright Brothers</label>
+    <input type="radio" name="ipl" id="" value="5"><br><br>
+    <label for="">Issac newton</label>
+    <input type="radio" name="ipl" id="" value="4">
+    <label for="">nikola tesla</label>
+    <input type="radio" name="ipl" id="" value="3">
+
+    <h3>2. who invented bulb</h3>                    
+    <label for="">a.dr Cv raman</label>
+    <input type="radio" name="pres" id="" value="obama">
+    <label for="">b.Albert Einstien</label>
+    <input type="radio" name="pres" id="" value="bush"><br><br>
+    <label for="">c.issac newton</label>
+    <input type="radio" name="pres" id="" value="trump">
+    <label for="">d.thomas Elva Edison</label>
+    <input type="radio" name="pres" id="" value="biden">
+
+    <h3>3.Who invented computer</h3>
+    <label for="">a.Carles babage</label>
+    <input type="radio" name="you" id="" value="shark">
+    <label for="">b.Albert Einstien</label>
+    <input type="radio" name="you" id="" value="despa"><br><br>
+    <label for="">Charles Darwin </label>
+    <input type="radio" name="you" id="" value="gang">
+    <label for="">Ada Lovelace</label>
+    <input type="radio" name="you" id="" value="floor">
+
+    <h3>What do evolution mean</h3>
+    <label for="">a.to adapt over a period of time of survival</label>
+    <input type="radio" name="tall" id="" value="burj">
+    <label for="">b.to change</label>
+    <input type="radio" name="tall" id="" value="twin"><br><br>
+    <label for="">c.to get bigger</label>
+    <input type="radio" name="tall" id="" value="eiffel">
+    <label for="">d.to get smaller</label>
+    <input type="radio" name="tall" id="" value="shang">
+
+    <h3>5.Name a famous naturalist who make documentaries?</h3>
+    <label for="">David Attenborough</label>
+    <input type="radio" name="rich" id="" value="black">
+    <label for="">b.Richard Attenborough</label>
+    <input type="radio" name="rich" id="" value="iron"><br><br>
+    <label for="">c.David micheals</label>
+    <input type="radio" name="rich" id="" value="bat">
+    <label for="">David beckham</label>
+    <input type="radio" name="rich" id="" value="aqua"><br><br>
+    <button onclick="check()">Sumbit Answers</button>
+</body>
+<script>
+    
+    function check() {
+        var score = 0
+        var ipl = document.querySelector('input[name="ipl"]:checked').value;
+        if (ipl == "5") {
+            score = score + 1;
+            localStorage.quiz = score;
+        }
+        var pres = document.querySelector('input[name="pres"]:checked').value;
+        if (pres == "biden") {
+            score = score + 1;
+            localStorage.quiz = score;
+        }
+        var you = document.querySelector('input[name="you"]:checked').value;
+        if (you == "shark") {
+            score = score + 1;
+            localStorage.quiz = score;
+        }
+        var tall = document.querySelector('input[name="tall"]:checked').value;
+        if (tall == "burj") {
+            score = score + 1;
+            localStorage.quiz = score;
+        }
+        var rich = document.querySelector('input[name="rich"]:checked').value;
+        if (rich == "black") {
+            score = score + 1;
+            localStorage.quiz = score;
+        }
+        document.getElementById("score").innerText = score;
+    }
+
+</script>
+<script src="bootstrap.bundle.min.js">
+
+</script>
+
+</html>

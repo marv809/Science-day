@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-image:
+            linear-gradient(rgb(31, 54, 255),#8090);
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1 {
+        color: white;
+    }
+  
+    u {
+        color: white;
+    } 
+
+    #box {
+        width: 80vw;
+        height: 85vh;
+        background-color: white;
+        margin: auto;
+    }
+</style>
+<body>
+    
+    <div id="box">
+        <h2>Score</h2>
+        <h3 id="score"></h3>
+<a href="Science quiz.html"><button class="btn btn-light bg-outline">play again</button></a>
+</body>
+
+<script>
+    document.getElementById("score").innerText =
+        localStorage.quiz;
+</script>
+
+</html>
